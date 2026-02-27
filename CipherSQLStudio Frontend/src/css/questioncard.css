@@ -1,0 +1,90 @@
+.questions-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Link reset */
+.question-row-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Row container */
+.question-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--color-border);
+
+  transition: background 0.2s ease;
+}
+
+.question-row:hover {
+  background: var(--color-surface);
+}
+
+/* Left side */
+.row-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Serial number */
+.row-number {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  min-width: 28px;
+}
+
+/* Title */
+.row-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.2px;
+}
+
+/* Difficulty */
+.row-level {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Level colors */
+.row-level.easy {
+  color: #22c55e;
+}
+
+.row-level.medium {
+  color: #facc15;
+}
+
+.row-level.hard {
+  color: #ef4444;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  .question-row {
+    padding: 14px 16px;
+  }
+
+  .row-title {
+    font-size: 0.95rem;
+  }
+
+  .row-number {
+    font-size: 0.8rem;
+  }
+
+  .row-level {
+    font-size: 0.75rem;
+  }
+}

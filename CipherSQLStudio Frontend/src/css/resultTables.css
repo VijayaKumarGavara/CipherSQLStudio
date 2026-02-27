@@ -1,0 +1,45 @@
+.result-table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e1e1e;
+  color: white;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+.result-table th {
+  background: #2c2c2c;
+  font-weight: bold;
+}
+
+.status-banner {
+  padding: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.success {
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+.failure {
+  background-color: #b71c1c;
+  color: #fff;
+}
+
+.error-box {
+  background: #330000;
+  color: #ffaaaa;
+  padding: 10px;
+}
